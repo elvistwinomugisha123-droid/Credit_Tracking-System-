@@ -1,0 +1,25 @@
+{
+  "name": "credit-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Credit Management Web Application — a web-based credit and loan management platform",
+  "scripts": {
+    "dev:api": "pnpm --filter api dev",
+    "dev:web": "pnpm --filter web dev",
+    "build:api": "pnpm --filter api build",
+    "build:web": "pnpm --filter web build",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma",
+      "bcrypt",
+      "esbuild"
+    ]
+  },
+  "keywords": [],
+  "author": "Twinomugisha",
+  "license": "ISC"
+}

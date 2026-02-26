@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm --version)",
+      "Bash(node --version)",
+      "Bash(for dir in apps/web/src/features/auth apps/web/src/features/customers apps/web/src/features/credits apps/web/src/features/payments apps/web/src/features/reports apps/web/src/hooks apps/web/src/types apps/web/src/components/ui apps/api/src/controllers apps/api/src/services apps/api/src/types)",
+      "Bash(do touch \"$dir/.gitkeep\")",
+      "Bash(done)",
+      "Bash(pnpm install)",
+      "Bash(pnpm --filter api exec prisma generate)"
+    ]
+  }
+}
